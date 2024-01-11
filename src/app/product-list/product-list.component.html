@@ -1,17 +1,16 @@
 <table class="product-table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price ({{ selectedCurrency }})</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let product of products">
-        <td>{{ product.name }}</td>
-        <td>{{ product.description }}</td>
-        <td>{{ calculatePriceInSelectedCurrency(product) | currency: selectedCurrency }}</td>
-      </tr>
-    </tbody>
-  </table>
-  
+  <thead style="background-color: #87CEEB;">
+    <tr>
+      <th style="background-color: #87CEEB;">Name</th>
+      <th style="background-color: #87CEEB;">Description</th>
+      <th style="background-color: #87CEEB;">Price ({{ selectedCurrency }})</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.description }}</td>
+      <td>{{ calculatePriceInSelectedCurrency(product) | currency: selectedCurrency }}</td>
+    </tr>
+  </tbody>
+</table>

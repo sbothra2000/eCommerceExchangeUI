@@ -17,7 +17,7 @@ export class CurrencyService {
   private initExchangeRates(): void {
     this.exchangeRateService.getExchangeRates().subscribe((exchangeRates) => {
       this.currencySubject.next({ currency: 'GBP', exchangeRates });
-      alert(JSON.stringify(exchangeRates, null, 2)); 
+      //alert(JSON.stringify(exchangeRates, null, 2)); 
     });
   }
 
